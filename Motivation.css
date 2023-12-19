@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    background-color: #3A4750;
+}
+
+.image {
+    background-image: url("https://images.unsplash.com/photo-1544194215-541c2d3561a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#btn {
+    padding: 20px 50px;
+    text-transform: uppercase;
+    border-radius: 14px;
+    font-size: 19px;
+    font-family: 'Pathway Extreme', sans-serif;
+    color: #ffffff80;
+    text-shadow: none;
+    box-shadow: none;
+    background: transparent;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transform: 0.5s ease;
+    user-select: none;
+    position: fixed; 
+}
+
+#btn:hover, :focus {
+    color: #025464;
+    background: #D4FAFC;
+    border: 1px solid #E6FFFD;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #ffffff80, 0 0 20px #ffffff80, 0 0 50px #ffffff80, 0 0 100px #ffffff80;
+}
+
+.play {
+    --hover-shadows: 10px 10px 23px #f1b0b0,
+                      -10px -10px 23px #f1b0b0;
+    --accent: rgb(194, 95, 121);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    border: none;
+    border-radius: 1.1em;
+    background-color: #212121;
+    color: #E6FFFD;
+    padding: 1em 2em;
+    transition: box-shadow ease-in-out 0.3s,
+                background-color ease-in-out 0.1s,
+                letter-spacing ease-in-out 0.1s,
+                transform ease-in-out 0.1s;
+    box-shadow: 13px 13px 10px #1c1c1c,
+                -13px -13px 10px #262626;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.play:hover {
+    box-shadow: var(--hover-shadows);
+}
+
+.play:active {
+    box-shadow: var(--hover-shadows),
+                 var(--accent) 0px 0px 30px 5px;
+    background-color: var(--accent);
+    transform: scale(0.95);
+}
+
+
+#par {
+    display: none;
+    font-family: 'Pathway Extreme', sans-serif;
+    font-size: 29px;
+    background-color: #BE5A83, 0.5;
+    color: #E6FFFD;
+    border-radius: 30px;
+    margin-top: 630px;
+    padding: 20px;
+    border: 1px solid #E6FFFD;
+    width: 70%;
+    text-align: center;
+}
+
+@media all and (max-width: 800px) {
+
+    #btn {
+        padding: 20px 10px;
+        font-size: 19px;
+    }
+
+    #par {
+        font-size: 19px;
+        padding: 10px;
+        margin-top: 500px;
+    }
+}
+
+
+
+@media all and (max-width: 400px) {
+    
+    #btn {
+        padding: 15px 10px;
+        font-size: 16px;
+    }
+    
+    #par {
+        font-size: 19px;
+        padding: 10px;
+        margin-top: 500px;
+    }
+}
